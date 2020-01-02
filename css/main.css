@@ -1,8 +1,15 @@
-* {
-	font-size: 14px;
-}
-
 .jumbotron img {
-	width: 472;
+	width: 375;
 	border: 5px solid #666;
 }
+
+hr {
+	width: 250px;
+	border-top: 3px solid #999;
+}
+
+section {
+	min-height: 550px;
+}
+/*Minimal panjang scroll section*/
+
