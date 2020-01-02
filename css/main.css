@@ -1,0 +1,8 @@
+* {
+	font-size: 14px;
+}
+
+.jumbotron img {
+	width: 472;
+	border: 5px solid #666;
+}
