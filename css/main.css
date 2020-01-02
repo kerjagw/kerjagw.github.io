@@ -9,7 +9,10 @@ hr {
 }
 
 section {
-	min-height: 550px;
+	min-height: 600px;
 }
 /*Minimal panjang scroll section*/
 
+.project {
+	background-color: #eee;
+}
