@@ -1,3 +1,12 @@
+html {
+	position: relative;
+}
+
+body{
+	margin-bottom: 5px
+}
+/*Samakan ukuran margin bottom dengan footer*/
+
 .jumbotron img {
 	width: 375;
 	border: 5px solid #666;
@@ -16,3 +25,17 @@ section {
 .project {
 	background-color: #eee;
 }
+
+.contact {
+	min-height: 650px;
+}
+
+.footer {
+	position: absolute;
+	width:100%;
+	/*width adalah lebar*/
+	height:5px;
+	bottom:0;
+	background-color: #333;
+}
+/*Membuat footer selalu di bawah (fixed)*/
