@@ -3,7 +3,7 @@ html {
 }
 
 body{
-	margin-bottom: 5px
+	margin-bottom: 105px;
 }
 /*Samakan ukuran margin bottom dengan footer*/
 
@@ -24,18 +24,25 @@ section {
 
 .project {
 	background-color: #eee;
+	min-height: 650px;
 }
 
 .contact {
 	min-height: 650px;
 }
 
-.footer {
+footer {
 	position: absolute;
-	width:100%;
-	/*width adalah lebar*/
-	height:5px;
-	bottom:0;
+	bottom: 0px;
+	width:110%;
+	height:105px;
 	background-color: #333;
 }
+
+footer p {
+	color: #999;
+	font-size: 1em;
+	padding-top: 25px;
+}
+/*width adalah lebar*/
 /*Membuat footer selalu di bawah (fixed)*/
