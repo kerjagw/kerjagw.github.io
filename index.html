@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +20,30 @@
   </head>
   <body>
     
+    <!-- Navbar section -->
+    <nav class="navbar navbar-inverse navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Responsive-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home">Gw</a>
+        </div>
+        <div class="collapse navbar-collapse" id="Responsive-navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- # mengarahkan ke id -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
     <!-- Jumbrotron section -->
     <div class="jumbotron text-center">
       <img src="img/gw.jpg" alt="foto profil" class="img-circle">
@@ -29,7 +53,7 @@
     <!--Jumbotron End -->
 
     <!-- About section -->
-    <section class="about" id="about">
+    <section class="about" id="about" pb-4>
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -79,9 +103,9 @@
     <!-- About end -->
 
     <!-- Project Section -->
-    <section class="project" id="project">
+    <section class="project bg-light" id="project">
       <div class="container">
-        <div class="row">
+        <div class="row mb-4 pt-4">
           <div class="col-lg-12">
             <h2 class="text-center">Project</h2>
             <hr>
@@ -91,7 +115,7 @@
       <!-- Title -->
 
       <br>
-      <div class="row">
+      <div class="row mb-4">
         <div class="col-lg-4">
         <a href="https://mengenalbahasapersatuan.blogspot.com/" class="thumbnail">
           <img src="img/6.png" alt="Blog">
@@ -188,7 +212,7 @@
     <!-- Footer End -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js">
     </script>

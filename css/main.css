@@ -3,12 +3,13 @@ html {
 }
 
 body{
+	margin-top: 45px;
 	margin-bottom: 105px;
 }
 /*Samakan ukuran margin bottom dengan footer*/
 
 .jumbotron img {
-	width: 375;
+	width: 300px;
 	border: 5px solid #666;
 }
 
