@@ -10,6 +10,10 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shorcut icon" type="text/css" href="img/gw.ico">
+    <!-- Favicon -->
+
+    <script src="https://kit.fontawesome.com/b366cf6e64.js" crossorigin="anonymous"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,7 +35,7 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a href="#home" class="navbar-brand">Gw</a>
+          <a href="#home" class="navbar-brand">{Gw}</a>
         </div>
         
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -49,7 +53,7 @@
     <div class="jumbotron text-center">
       <img src="img/gw.jpg" class="img-circle">
       <h1>Rizki Gilang wijaya</h1>
-      <p>Author | Front-End Developer | Designer</p>
+      <p>Author | Full-Stack Developer | Designer</p>
     </div>
     <!-- Jumbotron End -->
 
@@ -67,7 +71,7 @@
           <h2 class="text-center">Skills</h2>
           <div class="col-lg-3 kiri">
             <h3>Languages</h3>
-            <p>HTML5, CSS3, and Javascript</p>
+            <p>HTML5, CSS3, Javascript, PHP and MySql</p>
           </div>
           <div class="col-lg-3 kiri">
             <h3>Content Management System (CMS)</h3>
@@ -75,7 +79,7 @@
           </div>
           <div class="col-lg-3 kanan">
             <h3>Frameworks</h3>
-            <p>Bootstrap and Jquery</p>
+            <p>Bootstrap, CodeIgniter and Jquery</p>
           </div>
           <div class="col-lg-3 kanan">
             <h3>Version Control System (VCS)</h3>
@@ -115,7 +119,7 @@
 	      			<img src="img/6.png" alt="Blogger">
 	      			<div class="caption text-center">
 			        <h3>Blogger</h3>
-			        <a href="https://mengenalbahasapersatuan.blogspot.com/" class="btn btn-default" target="_blank" role="button">See more</a></p>
+			        <a href="https://mengenalbahasapersatuan.blogspot.com/" class="btn btn-primary" target="_blank" role="button">See more</a></p>
 		      		</div>
 		    	</div>
 
@@ -123,7 +127,7 @@
 		    	<img src="img/4.png" alt="Wordpress">
 	      		<div class="caption text-center">
 	        	<h3>Wordpress</h3>
-	        	<a href="https://sajakgw.home.blog/" target="_blank" class="btn btn-default" role="button">See more</a></p>
+	        	<a href="https://sajakgw.home.blog/" target="_blank" class="btn btn-primary" role="button">See more</a></p>
 	        	</div>
 	        </div>
     	</div>
@@ -162,7 +166,7 @@
           <!--  -->
 
           <div class="col-sm-5 col-sm-offset-1">
-            <form>
+            <form action="mailto:rgw.22.10@gmail.com" method="GET">
               <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" class="form-control" placeholder="Input name">
@@ -172,22 +176,33 @@
                 <input type="email" id="email" class="form-control" placeholder="Input email">
               </div>
               <div class="form-group">
-                <label for="telp">Phone Number</label>
+                <label for="tel">Phone Number</label>
                 <input type="tel" id="telp" class="form-control" placeholder="Input phone number">
               </div>
               <select class="form-control">
                 <option>Choose category</option>
-                <option>Writing </option>
+                <option>Web Development</option>
                 <option>Web Design</option>
+                <option>Writing</option>
                 <option>Wordpress</option>
                 <option>Blogger</option>
               </select>
               <div class="form-group">
-                <label for="Message">Message</label>
+                <label for="message">Message</label>
                 <textarea class="form-control" rows="3" placeholder="Type something"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" value="submit" class="btn btn-primary">Submit</button>
             </form>
+            <?php
+            if ($_GET)
+            {
+              echo 'name: ' . $_GET['nama'];
+              echo 'email: ' . $_GET['email'];
+              echo 'tel: ' . $_GET['tel'];
+              echo 'option: ' . $_GET['option'];
+              echo 'message: ' . $_GET['message'];
+            }
+            ?>
         </div>
        <!-- Form -->
       </div>
@@ -200,17 +215,15 @@
         <div class="row">
           <div class="col-sm-12">
             <p>&copy; Copyright 2020 | built with <i class="glyphicon glyphicon-heart"></i> by <a href="https://www.instagram.com/rizkigw_/?hl=id" target="_blank">Rizki Gilang Wijaya</a>.</p>
+            <h4>
+            <a href="https://www.facebook.com/rizki.g.wijaya.5" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/rizkigw_/?hl=id" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="h" target="_blank"><i class="fab fa-github"></i></a>
+            </h4>
           </div>
         </div>
         <!-- Copyright -->
-        <div class="row">
-          <div class="col-sm-12">
-            <a href="https://www.instagram.com/rizkigw_/?hl=id" class="btn btn-danger" target="_blank"><i class="glyphicon glyphicon-play"></i> Fb </a>
-            <a href="https://www.instagram.com/rizkigw_/?hl=id" class="btn btn-danger" target="_blank"><i class="glyphicon glyphicon-play"></i> Ig </a>
-            <a href="https://www.instagram.com/rizkigw_/?hl=id" class="btn btn-danger" target="_blank"><i class="glyphicon glyphicon-play"></i> Github </a>
-          </div>
-        </div>
-        <!-- Favicon -->
+
       </div>
     </footer>
     <!-- Footer End -->
