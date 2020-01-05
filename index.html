@@ -8,8 +8,8 @@
     <title>PortfolioGw</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,197 +19,208 @@
     <![endif]-->
   </head>
   <body>
-    
+
     <!-- Navbar section -->
-    <nav class="navbar navbar-inverse navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#Responsive-navbar" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand page-scroll" href="#home">Gw</a>
+
+          <a href="#home" class="navbar-brand">Gw</a>
         </div>
-        <div class="collapse navbar-collapse" id="Responsive-navbar">
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about" class="page-scroll">About</a></li>
-            <li><a href="#project" class="page-scroll">Project</a></li>
-            <li><a href="#contact" class="page-scroll">Contact</a></li>
-            <!-- # mengarahkan ke id -->
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- Navbar end -->
-
-    <!-- Jumbrotron section -->
+    <!-- Navbar End -->
+    
+    <!-- Jumbotron Section -->
     <div class="jumbotron text-center">
-      <img src="img/gw.jpg" alt="foto profil" class="img-circle">
-      <h1>Rizki Gilang Wijaya</h1>
-      <p>Front-End Developer</p>
+      <img src="img/gw.jpg" class="img-circle">
+      <h1>Rizki Gilang wijaya</h1>
+      <p>Author | Front-End Developer | Designer</p>
     </div>
-    <!--Jumbotron End -->
+    <!-- Jumbotron End -->
 
-    <!-- About section -->
-    <section class="about" id="about" pb-4>
+    <!-- About -->
+    <section class="about" id="about">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-sm-12">
             <h2 class="text-center">About</h2>
             <hr>
           </div>
         </div>
-        <!-- title -->
-
+        <!-- Title -->
         <div class="row">
           <h2 class="text-center">Skills</h2>
-          <div class="col-lg-3">
+          <div class="col-lg-3 kiri">
             <h3>Languages</h3>
             <p>HTML5, CSS3, and Javascript</p>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 kiri">
             <h3>Content Management System (CMS)</h3>
             <p>Wordpress and Blogger</p>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 kanan">
             <h3>Frameworks</h3>
             <p>Bootstrap and Jquery</p>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 kanan">
             <h3>Version Control System (VCS)</h3>
             <p>Git and Github</p>
           </div>
-        </div>
-        <!-- Skills section -->
+        </div>        
+        <br>
         <br>
         <div class="row">
-          <h2 class="text-center">Certificates</h2>
-            <div class="col-lg-3 col-lg-offset-3">
-            <!-- Menambahkan offset pada coloumn -->
+          <h2 class="text-center">Certificates</h2>    
+          <div class="col-sm-3 col-sm-offset-3 kiri">
              <h3>Dicoding</h3>
              <p>Progressive Web App (PWA) developer 2020</p> 
-            </div>
-            <div class="col-lg-3 col-lg-offset-2">
-              <h3>LINE</h3>
-              <p>Line Front-End Framework (LIFF:API) developer 2020</p>
-            </div>
-        </div>
-        <!-- Certificates section -->
-
-      </div>
-    </section>
-    <!-- About end -->
-
-    <!-- Project Section -->
-    <section class="project bg-light" id="project">
-      <div class="container">
-        <div class="row mb-4 pt-4">
-          <div class="col-lg-12">
-            <h2 class="text-center">Project</h2>
-            <hr>
+          </div>
+          <div class="col-sm-3 kanan">
+            <h3>LINE</h3>
+            <p>Line Front-End Framework (LIFF : API) developer 2020</p>
           </div>
         </div>
       </div>
-      <!-- Title -->
-
-      <br>
-      <div class="row mb-4">
-        <div class="col-lg-4">
-        <a href="https://mengenalbahasapersatuan.blogspot.com/" class="thumbnail">
-          <img src="img/6.png" alt="Blog">
-        </a>  
-        </div>
-        <div class="col-lg-4">
-        <a href="https://mengenalbahasapersatuan.blogspot.com/" class="thumbnail">
-          <img src="img/6.png" alt="Companyprofile">
-        </a>  
-        </div>
-        <div class="col-lg-4">
-        <a href="https://mengenalbahasapersatuan.blogspot.com/" class="thumbnail">
-          <img src="img/6.png" alt="Olshop">
-        </a>  
-        </div>
-        <div class="col-lg-4">
-        <a href="https://sajakgw.home.blog/" class="thumbnail">
-          <img src="img/4.png" alt="Wordpress">
-        </a>  
-        </div>
-        <div class="col-lg-4">
-        <a href="https://mengenalbahasapersatuan.blogspot.com/" class="thumbnail">
-          <img src="img/6.png" alt="landingpage">
-        </a>  
-        </div>
-        <div class="col-lg-4">
-        <a href="https://mengenalbahasapersatuan.blogspot.com/" class="thumbnail">
-          <img src="img/6.png" alt="Blogger">
-        </a>  
-        </div>
-        <!-- Menambahkan teknik lightbox -->
     </section>
-    <!-- Project End -->
+    <!-- About End -->
 
-    <!-- Contact Section -->
+    <!-- Portfolio Section-->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2>Portfolio</h2>
+            <hr>
+          </div>
+        </div>
+        <!-- Title -->
+
+        <div class="row">
+	  			<div class="col-md-5 thumbnail">
+	      			<img src="img/6.png" alt="Blogger">
+	      			<div class="caption text-center">
+			        <h3>Blogger</h3>
+			        <a href="https://mengenalbahasapersatuan.blogspot.com/" class="btn btn-default" target="_blank" role="button">See more</a></p>
+		      		</div>
+		    	</div>
+
+		    <div class="col-md-5 col-sm-offset-2 thumbnail">
+		    	<img src="img/4.png" alt="Wordpress">
+	      		<div class="caption text-center">
+	        	<h3>Wordpress</h3>
+	        	<a href="https://sajakgw.home.blog/" target="_blank" class="btn btn-default" role="button">See more</a></p>
+	        	</div>
+	        </div>
+    	</div>
+	</section>
+    <!-- Portfolio End -->
+
+    <!-- Contact Section-->
     <section class="contact" id="contact">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <h2 class="text-center">Contact</h2>
+          <div class="col-sm-12 text-center">
+            <h2>Contact</h2>
             <hr>
-          </div>
-        </div>
-      </div>
+	        </div>
+	    </div>
+	    <!-- Title -->
 
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <form>
-            <div class="form-group">
-              <label for="nama">Nama</label>
-              <input type="text" class="form-control" id="nama" placeholder="Input name">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Input email">
-            </div>
-            <select class="form-control">
-              <option>Choose Category</option>
-              <option value="Web Development">Web Development</option>
-              <option value="Web Design">Web Design</option>
-              <option value="Wordpress">Wordpress</option>
-              <option value="Blogger">Blogger</option>
-            </select>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea class="form-control" rows="10">Type something</textarea>
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
+	    <div class="row justify-content-center">
+          <div class="col-sm-4 col-sm-offset-1">
+          	<br>
+            <div class="card bg-primary text-white mb-4 text-center">
+              <div class="card-body pt-1 pb-1">
+                <h5 class="card-title">Hire Me!</h5>
+                <p class="card-text">
+                I am usually worker as remote. But, you can</p> <p>also find me at this geological location.</p>
+              </div>
+          </div>
+          <br>
+            <ul class="list-group mb-4">
+              <li class="list-group-item"><h3>Location</h3></li>
+              <li class="list-group-item">My Home</li>
+              <li class="list-group-item">Jl. Padat Karya, No Q.11, Prabumulih</li>
+              <li class="list-group-item">South Sumatera, Indonesia</li>
+            </ul>
+          </div>
+          <!--  -->
+
+          <div class="col-sm-5 col-sm-offset-1">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Input name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Input email">
+              </div>
+              <div class="form-group">
+                <label for="telp">Phone Number</label>
+                <input type="tel" id="telp" class="form-control" placeholder="Input phone number">
+              </div>
+              <select class="form-control">
+                <option>Choose category</option>
+                <option>Writing </option>
+                <option>Web Design</option>
+                <option>Wordpress</option>
+                <option>Blogger</option>
+              </select>
+              <div class="form-group">
+                <label for="Message">Message</label>
+                <textarea class="form-control" rows="3" placeholder="Type something"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
+       <!-- Form -->
       </div>
     </section>
-    <br>
     <!-- Contact End -->
-
-    <!-- Footer  -->
+    
+    <!-- Footer Section -->
     <footer>
       <div class="container text-center">
         <div class="row">
           <div class="col-sm-12">
-            <p>&copy; copyright 2020 | built with <i class="glyphicon glyphicon-heart"></i> by <a href="https://www.instagram.com/rizkigw_/?hl=id">Rizki Gilang Wijaya</a></p>
-            <p><a href="https://www.instagram.com/rizkigw_/?hl=id">Favicon</a></p>
+            <p>&copy; Copyright 2020 | built with <i class="glyphicon glyphicon-heart"></i> by <a href="https://www.instagram.com/rizkigw_/?hl=id" target="_blank">Rizki Gilang Wijaya</a>.</p>
           </div>
         </div>
-      </div>
+        <!-- Copyright -->
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="https://www.instagram.com/rizkigw_/?hl=id" class="btn btn-danger" target="_blank"><i class="glyphicon glyphicon-play"></i> Fb </a>
+            <a href="https://www.instagram.com/rizkigw_/?hl=id" class="btn btn-danger" target="_blank"><i class="glyphicon glyphicon-play"></i> Ig </a>
+            <a href="https://www.instagram.com/rizkigw_/?hl=id" class="btn btn-danger" target="_blank"><i class="glyphicon glyphicon-play"></i> Github </a>
+          </div>
+        </div>
+        <!-- Favicon -->
       </div>
     </footer>
     <!-- Footer End -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 
-    <script type="text/javascript" src="js/script.js"></script>
-  </body>
+</body>
 </html>

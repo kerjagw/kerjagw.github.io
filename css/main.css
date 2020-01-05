@@ -2,48 +2,101 @@ html {
 	position: relative;
 }
 
-body{
-	margin-top: 45px;
-	margin-bottom: 105px;
+body {
+	margin-bottom: 120px;
+	margin-top: 30px;
 }
-/*Samakan ukuran margin bottom dengan footer*/
+/*Sticky Navbar and Fixed Footer*/
+.jumbotron {
+	height: 500px;
+	background-image: url(../img/bg-header.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 0 -140px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+}
 
 .jumbotron img {
 	width: 300px;
-	border: 5px solid #666;
+	border: 5px solid #ddd;
 }
 
+.jumbotron h1, .jumbotron p {
+	color: rgba(255,255,255,.8);
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+/*Jumbotron*/
 hr {
 	width: 250px;
 	border-top: 3px solid #999;
 }
-
+/*Horizontal Rules*/
 section {
 	min-height: 600px;
 }
-/*Minimal panjang scroll section*/
 
-.project {
+.kiri, .kanan {
+	opacity: 0;
+	transform: translate(-50px, 0);
+	transition: 1.2s;
+}
+
+.kanan {
+	transform: translate(50px, 0);
+}
+
+.kiri-go, .kanan-go {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.portfolio {
 	background-color: #eee;
-	min-height: 650px;
 }
 
+.portfolio .thumbnail {
+	opacity: 0;
+	transform: translate(0,-40px);
+	transition: .3s;
+}
+
+.portfolio .thumbnail.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+/*Portfolio Section*/
 .contact {
-	min-height: 650px;
+	min-height: 600px;
 }
 
+.card { 
+	position: relative;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #blue
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+/*Contact Section*/
 footer {
 	position: absolute;
-	bottom: 0px;
-	width:110%;
-	height:105px;
+	bottom: 0;
+	width: 100%;
+	height: 120px;
 	background-color: #333;
+	padding-top: 30px;
 }
 
 footer p {
-	color: #999;
-	font-size: 1em;
-	padding-top: 25px;
+	color: #aaa;
+	font-size: 0.9em;
 }
-/*width adalah lebar*/
-/*Membuat footer selalu di bawah (fixed)*/
+
+footer p i {
+	color: salmon;
+}
+/*Footer Section*/
