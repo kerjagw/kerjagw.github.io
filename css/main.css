@@ -9,7 +9,7 @@ body {
 
 /*Sticky Navbar and Fixed Footer*/
 .jumbotron {
-	height: 450px;
+	height: 500px;
 	background-image: url(../img/.png);
 	background-size: cover;
 	background-color: #337ab7;
@@ -69,7 +69,7 @@ section {
 }
 /*Portfolio Section*/
 .contact {
-	min-height: 800px;
+	min-height: 600px;
 }
 
 .card { 
