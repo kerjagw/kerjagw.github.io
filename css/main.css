@@ -33,6 +33,10 @@ hr {
 	width: 250px;
 	border-top: 3px solid #999;
 }
+
+h3 {
+	color: #337ab7;
+}
 /*Horizontal Rules*/
 section {
 	min-height: 600px;
