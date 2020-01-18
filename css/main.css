@@ -49,13 +49,6 @@ section {
 	transition: 1.2s;
 }
 
-.collapse ul li {
-
-}
-
-.collapse ul li a {
-	padding-left: 150px;
-}
 
 .kanan {
 	transform: translate(50px, 0);
